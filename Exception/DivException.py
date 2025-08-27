@@ -1,0 +1,2 @@
+class MyDivException(Exception):
+    pass
