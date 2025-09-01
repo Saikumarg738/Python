@@ -6,13 +6,13 @@ try:
         password="root1234",
         dsn="database-1.cm3s0iaq2072.us-east-1.rds.amazonaws.com/orcl")
     curobj=conobj.cursor()
-    sql="""alter table employee
-           modify(EXP number(2,1))"""
-    sql2="""alter table employee
-           modify(Name varchar(30))"""
+    #sql="""insert into employee (Name,Dept,Role,Exp,EID)
+    #       values('Sai Kumar Gangupamu','BRCC','SMT',5.8,331459)"""
+    sql ="""insert into employee (Name,Dept,Role,Exp,EID)
+           values('Sai Kumar Gangupamu','BRCC','SMT',5.8,331459)"""
     try:
         curobj.execute(sql)
-        #curobj.execute(sql2)
+        conobj.commit()
     except orc.DatabaseError as er:
         print("Error running query")
         print(er)
