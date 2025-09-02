@@ -1,8 +1,9 @@
+# Take 2 lists and add number
 
-ls1=[ int(a) for a in input("ENter first list : ").split(",")]
+ls1=[int(i) for i in input("Enter the list with .").split(".")]
 
-ls2=[ int(a) for a in input("ENter first list : ").split(",")]
+ls2=[int(i) for i in input("Enter the list with .").split(".")]
 
-final=list(map(lambda a,b: a+b, ls1,ls2))
+sumls=list(map(lambda a,b: a+b, ls1, ls2))
 
-print(final)
+print(sumls)
