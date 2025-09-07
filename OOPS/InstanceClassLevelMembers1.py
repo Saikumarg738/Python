@@ -17,4 +17,5 @@ print("The object of S1 before are : ",s1.__dict__)
 print("The object of S2 before are : ",s1.__dict__)
 print(s1.course)
 print(s2.course)
+print(student.course)
 
