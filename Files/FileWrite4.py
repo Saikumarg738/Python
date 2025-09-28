@@ -5,6 +5,6 @@ try:
     fs=op.read()
     close()
     with open("Data2","w") as lm:
-        lm.writelines(fs)
+        lm.write(fs)
 except FileExistsError:
     print("File already exists")

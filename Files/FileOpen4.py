@@ -1,5 +1,5 @@
 try:
-    with open("Sample.txt","r") as fa:
+    with open("Sample.txt","a+") as fa:
         print("Is file open? : ",fa.closed)
         print("File mode : ",fa.mode)
         print("Is file readable? : ",fa.readable())

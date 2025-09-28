@@ -1,3 +1,5 @@
 a=open("Sample.data","w")
+a.write("Entering first line \n")
+a.write("Entering second line")
 print("Hello this is first line")
 print("Type of a is : ",type(a))
