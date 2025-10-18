@@ -1,0 +1,20 @@
+<!-- templates/index.html -->
+{% extends "base.html" %}
+
+{% block title %}Home - My Flask App{% endblock %}
+
+{% block content %}
+    <h2>Hello, Sai!</h2>
+
+    <ul>
+        {% for i in names %}
+            <li>{{ i|upper }}</li>
+        {% endfor %}
+    </ul>
+
+    {% if "Sai" in names %}
+        <p>Sai is in the list</p>
+    {% else %}
+        <p>Sai is not in the list</p>
+    {% endif %}
+{% endblock %}

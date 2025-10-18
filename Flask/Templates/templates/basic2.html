@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First HTML Page</title>
+</head>
+<body>
+
+    <h1>Hello, Sai!</h1>
+<ul>
+    {% for i in names %}
+    <li> {{i}} </li>
+    {% endfor %}
+</ul>
+
+{% if "Sai" in names %}
+<p>Sai is in the list</p>
+{% else %}
+<p>Sai is not in the list</p>
+{% endif %}
+
+</body>
+</html>

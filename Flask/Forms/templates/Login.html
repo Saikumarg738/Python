@@ -1,0 +1,8 @@
+<h1> Welcome to Sai's Website </h1>
+
+<form action="{{url_for('loginhome')}}" method="POST" >
+    {{obj.hidden_tag()}}
+    {{obj.username.label}} {{obj.username()}}
+    {{obj.password.label}} {{obj.password()}}
+    {{obj.submit.label}} {{obj.submit()}}
+</form>

@@ -1,0 +1,8 @@
+<p> Enter your breed </p>
+<p> The breed you have entered is {{obj.name.data}}</p>
+
+<form method="POST">
+    {{ obj.hidden_tag() }}
+    {{ obj.name.label }} {{ obj.name() }}
+    {{ obj.submit() }}
+</form>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>URL For Demo</title>
+</head>
+<body>
+    <h1>Welcome!</h1>
+
+    <ul>
+        <li><a href="{{ url_for('hello') }}">Hello Page</a></li>
+        <li><a href="{{ url_for('hi', user='sai') }}">Sai's Profile</a></li>
+        <li><a href="{{ url_for('go_to_hello') }}">Redirect to Hello</a></li>
+    </ul>
+
+</body>
+</html>
