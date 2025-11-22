@@ -3,8 +3,9 @@
 #Expected Result : 2
 
 ls=['abc', 'xyz', 'aba', '1221']
+
 count=0
 for i in ls:
-    if(len(i)>=2 and i[0]==i[len(i)-1]):
+    if(len(i)>0 and i[0]==i[-1]):
         count+=1
 print(count)

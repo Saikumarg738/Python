@@ -10,4 +10,3 @@ a=np.array(b)
 
 #print(sys.getsizeof(a))
 print(a.nbytes)
-
