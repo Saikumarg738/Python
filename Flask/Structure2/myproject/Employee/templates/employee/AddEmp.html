@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron">
+  <h1>Add Employee</h1>
+  <form method="POST">
+      {# This hidden_tag is a CSRF security feature. #}
+      {{ fm.hidden_tag() }}
+      {{ fm.name.label }} {{ fm.name() }}<br>
+      {{ fm.dname.label }} {{ fm.dname() }}<br>
+      {{ fm.Submit() }}
+  </form>
+</div>
+{% endblock %}

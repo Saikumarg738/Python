@@ -7,8 +7,9 @@ for i in range(3):
         for k in range(6):
             ls.append("*")
         ls1.append(ls)
-    print(ls1)
+    #print(ls1)
     ls2.append(ls1)
+print(ls2)
 
 
 

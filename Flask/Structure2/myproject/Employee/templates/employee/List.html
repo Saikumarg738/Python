@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron">
+  <h1>Here is a list of all Employee.</h1>
+  <ul>
+    {% for st in d1 %}
+    <li>{{st.name}} - {{st.department.name}}</li>
+    {% endfor %}
+  </ul>
+
+</div>
+{% endblock %}
